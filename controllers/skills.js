@@ -1,22 +1,14 @@
-const Skills = require("../models/skill");
-
-// const index = (req, res) => {
-//     res.render(skills/index, {
-//         skills: Skills.getAllSkills()
-//     });
-// }
+const Skill = require("../models/skill");
 
 const index = (req, res) => {
-  console.log(req.query);
-  3;
   res.render("skills/index", {
-    skills: Skills.getAll(),
+    skills: Skill.getAll(),
     reqTime: req.time
   });
 };
 
 const show = (req, res) => {
-  const skill = skill.getOne(req.params.id);
+  const skill = Skill.getOne(req.params.id);
   if (skill) {
     res.render("skills/show", {
       skill,
@@ -42,11 +34,6 @@ const deleteSkill = (req, res) => {
   res.redirect("/skills");
 };
 
-const update = (req, res) => {
-  Skill.update(req.params.id, req.body);
-  res.redirect("/skills/" + req.params.id);
-};
-
 const edit = (req, res) => {
   const skill = Skill.getOne(req.params.id);
   if (skill) {
@@ -58,6 +45,11 @@ const edit = (req, res) => {
   } else {
     res.redirect("/skills");
   }
+};
+
+const update = (req, res) => {
+  Skill.update(req.params.id, req.body);
+  res.redirect("/skills/" + req.params.id);
 };
 
 module.exports = {
