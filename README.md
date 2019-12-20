@@ -9,14 +9,10 @@
 
 You've now seen how we can generate a skeleton Express application and implement the **index** & **show** functionality for a **resource** (To Dos).
 
-Now it's time to practice by doing the very same thing, but for a different data resource - _developer skills_.
 
-##### This lab, combined with Part 2, is a Deliverable
+##### 
 
 ## Exercises
-
-
-The goal of the lab is to do put in a rep doing everything that you did during the _Express - Routers & Controllers_ lesson:
 
 
 - Scaffold a new app named `express-dev-skills` using express generator.
@@ -31,29 +27,6 @@ The goal of the lab is to do put in a rep doing everything that you did during t
 
 - Implement **show** functionality for the `skills` resource
 
-- Be sure to commit as you go
-
-- When you are done, create a corresponding repo on Github and follow the prompts to push an existing repo.
-
-## Hints
-
-- Keep the data resource name short and simple - something like `skills`.
-
-- Following best-practice routing and MVC will result in the following modules for the `skills` ressource:
-	- **routes/skills.js**
-	- **models/skill.js**
-	- **views/skills**
-	- **controllers/skills.js**
-
-- Use [RESTful routes](restful-routing-chart.md)
-
-
-## Bonuses
-
-- Use EJS partial views to make your templates more DRY (see link in Reference section of the lesson) and/or [this link](https://www.npmjs.com/package/ejs#includes).
-
-- Add styling or use a CSS framework to make the app look better :)
-
 # Express Lab
 # My Dev Skills - Part 2
 ---
@@ -66,10 +39,6 @@ In the last lesson you saw how to use HTML forms and Express middleware, such as
 - `method-override`
 
 to perform **Create**, **Update** & **Delete** data operations in an Express application.
-
-This lab builds upon the `express-dev-skills` project you created in the _My Dev Skills - Part 1_ lab where the **Read** data operation was implemented.
-
-##### This Lab is a Deliverable
 
 ## Exercises
 
@@ -87,11 +56,6 @@ Note: All routes should follow those described in the [RESTful/Resourceful routi
 
 - Be sure to install, require & mount the `method-override` middleware.
 
-## Bonus Exercises
-
-1. On the **show** view, display an _Edit Skill_ link that when clicked, displays an **edit** view that displays a form for editing that Dev Skill.
-
-2. When the edit Dev Skill form is submitted, the skill should be updated in the "database" and redirect the user back to the **show** view.
 
 ##### Hints
 
